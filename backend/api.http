@@ -1,0 +1,70 @@
+POST http://localhost:5000/api/users/register
+Content-Type: application/json
+
+{
+  "name": "om",
+  "email": "om@example.com",
+  "password": "om1705",
+  "username": "om"
+}
+
+###
+
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{
+    "email":"om@example.com",
+    "password":"om1705"
+}
+
+###
+
+GET http://localhost:5000/api/users/get_user_and_profile
+Authorization: Bearer 6fe9682f9b75bba3dacde5404671fe0b01b77e826f7ce20fd4c80a7b83f5a857
+###
+POST http://localhost:5000/api/users/update_profile_data
+Content-Type: application/json
+
+{
+  "token": "6fe9682f9b75bba3dacde5404671fe0b01b77e826f7ce20fd4c80a7b83f5a857",
+  "bio": "Backend developer",
+  "currentPost": "Developer"
+}
+
+###
+GET http://localhost:5000/api/users/get_all_user_profile
+
+###
+POST http://localhost:5000/api/posts/post
+
+
+
+
+
+###
+GET http://localhost:5000/api/posts/posts
+
+###
+POST http://localhost:5000/api/users/update_profile_data
+Content-Type: application/json
+
+{
+  "token":"d2208bca18e1745d291e6a43db90987395797b378a9871ec421464ba1d36016b",
+  "bio":"hey , I am in Pharma Industry!",
+  "currentPost":"CTO",
+  "pastWork":[
+    {
+      "company":"Cipla",
+      "position":"CTO",
+      "years":" 2 Years"
+    }
+  ],
+  "education":[
+    {
+      "school":"server",
+      "degree":"BPharm",
+      "fieldOfstudy":"medical"
+    }
+  ]
+}
