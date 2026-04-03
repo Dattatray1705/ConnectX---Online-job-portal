@@ -1,0 +1,92 @@
+.homeContainer{
+    display: flex;
+
+}
+.homeContainer>div:nth-child(odd){
+ flex:0.2;
+
+}
+
+.homeContainer>div:nth-child(even){
+ flex:0.6;
+}
+.homeContainer_leftBar{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: start;
+    border-right: 1px solid silver;
+
+
+
+}
+.sideBarOption{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    gap:1.3rem;
+    margin:0.5em;
+    width: 80%;
+    max-width: 80%;
+    cursor: pointer;
+    transition: all 0.2s ;
+}
+.sideBarOption > svg {
+  width: 1.6em;
+  height: 1.6em;
+  min-width: 1.6em;
+  stroke-width: 1.8; /* makes outline icons look bolder */
+}
+.sideBarOption:hover{
+    transform: scale(1.06);
+}
+.topRight {
+  display: flex;
+  align-items: center;   /* vertical center */
+  gap: 16px;             /* space between items */
+}
+.homeContainer_extraContainer{
+    border-left: 1px solid silver;
+    padding-left:1.2rem ;
+
+}
+.homeContainer_feedContainer{
+    padding-inline: 0.8rem;
+    padding-bottom: 8vh;
+}
+.mobileNavBar{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 27px;
+    display: none;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+   
+
+}
+.mobileNavBar svg{
+    height: 2rem;
+    width: 2rem;
+    opacity: 1;
+
+
+}
+
+@media only screen and (max-width:600px){
+    .homeContainer_extraContainer{
+        display: none;
+    }
+    .homeContainer{
+        display: block;
+    }
+    .homeContainer_leftBar{
+        display: none;
+    }
+    .mobileNavBar{
+    display: flex;
+}
+}
+

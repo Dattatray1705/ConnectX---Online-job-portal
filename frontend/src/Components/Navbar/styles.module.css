@@ -1,0 +1,44 @@
+.container{
+    padding: 1.2rem;
+  overflow: visible;
+}
+
+
+
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.navBarOptionContainer{
+    display: flex;
+
+}
+.buttonJoin{
+    background: #cd8987;
+    border-radius: 10px;
+    padding-block: 0.6rem;
+    padding-inline: 1.2rem;
+    color:white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navBarOptionContainer > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navBarOptionContainer > div p {
+  margin: 0;              /* remove default <p> margin */
+}
+.navBarOptionContainer > div p:last-child {
+  background-color: #ff4d4f;   /* red */
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
